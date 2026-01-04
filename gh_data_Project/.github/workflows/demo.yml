@@ -29,10 +29,11 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: dist-files
-          path: |
-            dist
-            package.json
-            !path/**/*.tmp
+          path: dist
+          # path: |
+            # dist
+            # package.json
+            # !path/**/*.tmp
   deploy:
     needs: build
     runs-on: ubuntu-latest
